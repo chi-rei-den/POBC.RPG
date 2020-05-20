@@ -1,0 +1,14 @@
+C:\Users\cy332\Desktop\tshock\Tshock\ServerPlugins\POBC.RPG.dll
+C:\Users\cy332\Desktop\tshock\Tshock\ServerPlugins\POBC.RPG.pdb
+C:\Users\cy332\Desktop\原创插件\PBOC\POBC2\POBC.RPG\obj\Debug\POBC.RPG.csprojAssemblyReference.cache
+C:\Users\cy332\Desktop\原创插件\PBOC\POBC2\POBC.RPG\obj\Debug\POBC.RPG.csproj.CoreCompileInputs.cache
+C:\Users\cy332\Desktop\原创插件\PBOC\POBC2\POBC.RPG\obj\Debug\POBC.RPG.csproj.CopyComplete
+C:\Users\cy332\Desktop\原创插件\PBOC\POBC2\POBC.RPG\obj\Debug\POBC.RPG.dll
+C:\Users\cy332\Desktop\原创插件\PBOC\POBC2\POBC.RPG\obj\Debug\POBC.RPG.pdb
+C:\Users\cy332\Desktop\原创插件\1.4\PBOC\POBC2\POBC.RPG\obj\Debug\POBC.RPG.csproj.CoreCompileInputs.cache
+C:\Users\cy332\Desktop\原创插件\1.4\PBOC\POBC2\POBC.RPG\obj\Debug\POBC.RPG.dll
+C:\Users\cy332\Desktop\原创插件\1.4\PBOC\POBC2\POBC.RPG\obj\Debug\POBC.RPG.pdb
+C:\Users\cy332\Desktop\tshock\Tshock-1.4\tshock\ServerPlugins\POBC.RPG.dll
+C:\Users\cy332\Desktop\tshock\Tshock-1.4\tshock\ServerPlugins\POBC.RPG.pdb
+C:\Users\cy332\Desktop\原创插件\1.4\PBOC\POBC2\POBC.RPG\obj\Debug\POBC.RPG.csproj.CopyComplete
+C:\Users\cy332\Desktop\原创插件\1.4\PBOC\POBC2\POBC.RPG\obj\Debug\POBC.RPG.csprojAssemblyReference.cache
