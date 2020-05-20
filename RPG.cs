@@ -23,7 +23,7 @@ namespace Bank
 		#region Info
 		public override string Name => "PBOC.RPG";
 
-		public override string Author => "欲情 trbbs.cc";
+		public override string Author => "欲情 trbbs.cc ";
 
 		public override string Description => "POBC 系列插件-RPG 插件.";
 
