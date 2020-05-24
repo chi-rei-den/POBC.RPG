@@ -144,7 +144,7 @@ namespace Bank
 			int r = rd.Next(0, 255);
 			int g = rd.Next(0, 255);
 			int b = rd.Next(0, 255);
-			string message = "[" + TShock.Players[id].Group.Name + "]" + "["+pobcc.Db.QueryCurrency(TShock.Players[id].Name) + "/" +Data(id)+ "]";
+			string message = "[" + TShock.Players[id].Group.Name + "]" + "["+POBC2.Db.QueryCurrency(TShock.Players[id].Name) + "/" +Data(id)+ "]";
 			Microsoft.Xna.Framework.Color c = new Microsoft.Xna.Framework.Color(r, g, b);
 			NetMessage.SendData(119,
 	-1, -1, NetworkText.FromLiteral(message), (int)c.PackedValue, TShock.Players[id].X, TShock.Players[id].Y + 50);
@@ -186,10 +186,10 @@ namespace Bank
 				}
 				else
 				{
-					if (pobcc.Db.QueryCurrency(args.Player.Name) > Clist[0])
+					if (POBC2.Db.QueryCurrency(args.Player.Name) > Clist[0])
 					{
 						TShock.UserAccounts.SetUserGroup(args.Player.Account, GroupList[0]);
-						pobcc.Db.DownC(args.Player.Name, Clist[0]);
+						POBC2.Db.DownC(args.Player.Name, Clist[0]);
 						args.Player.SendWarningMessage("您的等级成功提升，当前等级" + GroupList[0]);
 
 						for (int i = 0; i < Co(GroupList[0]).Count; i++)
@@ -219,11 +219,11 @@ namespace Bank
 				}
 				string com = args.Parameters[0];
 				int coordinate = GroupList.IndexOf(com);
-				if (Clist[coordinate] < pobcc.Db.QueryCurrency(args.Player.Name))
+				if (Clist[coordinate] < POBC2.Db.QueryCurrency(args.Player.Name))
 				{
 					TShock.UserAccounts.SetUserGroup(args.Player.Account, args.Parameters[0]);
 					args.Player.SendWarningMessage("您的等级成功提升，当前等级" + args.Player.Group.Name);
-					pobcc.Db.DownC(args.Player.Name, Clist[coordinate]);
+					POBC2.Db.DownC(args.Player.Name, Clist[coordinate]);
 					for (int i = 0; i < Co(GroupList[0]).Count; i++)
 					{
 						var C = Co(GroupList[0])[i].Replace("{name}", args.Player.Name);
@@ -233,7 +233,7 @@ namespace Bank
 				}
 				else
 				{
-					args.Player.SendWarningMessage("您的货币不足，您当前货币" + pobcc.Db.QueryCurrency(args.Player.Name) + "升级需要货币：" + Clist[coordinate]);
+					args.Player.SendWarningMessage("您的货币不足，您当前货币" + POBC2.Db.QueryCurrency(args.Player.Name) + "升级需要货币：" + Clist[coordinate]);
 				}
 			}
 
