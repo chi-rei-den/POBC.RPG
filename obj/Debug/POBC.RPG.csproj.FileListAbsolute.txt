@@ -16,3 +16,4 @@ C:\Users\cy332\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.csproj.CoreCompil
 C:\Users\cy332\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.dll
 C:\Users\cy332\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.pdb
 C:\Users\cy332\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.csproj.CopyComplete
+C:\Users\cy332\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.csprojAssemblyReference.cache
