@@ -224,9 +224,9 @@ namespace Bank
 					TShock.UserAccounts.SetUserGroup(args.Player.Account, args.Parameters[0]);
 					args.Player.SendWarningMessage("您的等级成功提升，当前等级" + args.Player.Group.Name);
 					POBC2.Db.DownC(args.Player.Name, Clist[coordinate]);
-					for (int i = 0; i < Co(GroupList[0]).Count; i++)
+					for (int i = 0; i < Co(GroupList[coordinate]).Count; i++)
 					{
-						var C = Co(GroupList[0])[i].Replace("{name}", args.Player.Name);
+						var C = Co(GroupList[coordinate])[i].Replace("{name}", args.Player.Name);
 						Commands.HandleCommand(TSPlayer.Server, C);
 					}
 
