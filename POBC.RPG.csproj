@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\tshock\Tshock-1.4\tshock\ServerPlugins\</OutputPath>
+    <OutputPath>..\..\..\tshock\Tshock-1.4.1.1\ServerPlugins\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -47,9 +47,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\tshock\Tshock-1.4\tshock\ServerPlugins\OTAPI.dll</HintPath>
     </Reference>
-    <Reference Include="POBC2, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="POBC2, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\tshock\Tshock-1.4\tshock\ServerPlugins\POBC2.dll</HintPath>
+      <HintPath>..\..\..\tshock\Tshock-1.4.1.1\ServerPlugins\POBC2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
