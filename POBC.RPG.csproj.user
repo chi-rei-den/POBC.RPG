@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>C:\Users\cy332\Desktop\tshock\Tshock-1.4.1.1\TerrariaServer.exe</StartProgram>
-    <StartWorkingDirectory>C:\Users\cy332\Desktop\tshock\Tshock-1.4.1.1\</StartWorkingDirectory>
+    <StartProgram>C:\Users\cy\Desktop\tshock\Tshock 4.5.4\TerrariaServer.exe</StartProgram>
+    <StartWorkingDirectory>C:\Users\cy\Desktop\tshock\Tshock 4.5.4\</StartWorkingDirectory>
   </PropertyGroup>
 </Project>

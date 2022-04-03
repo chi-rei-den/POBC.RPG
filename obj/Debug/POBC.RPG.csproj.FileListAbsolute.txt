@@ -19,3 +19,10 @@ C:\Users\cy332\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.csproj.CoreCompil
 C:\Users\cy332\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.csproj.CopyComplete
 C:\Users\cy332\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.dll
 C:\Users\cy332\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.pdb
+C:\Users\cy\Desktop\tshock\Tshock 4.5.4\ServerPlugins\POBC.RPG.dll
+C:\Users\cy\Desktop\tshock\Tshock 4.5.4\ServerPlugins\POBC.RPG.pdb
+C:\Users\cy\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.csprojAssemblyReference.cache
+C:\Users\cy\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.csproj.CoreCompileInputs.cache
+C:\Users\cy\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.csproj.CopyComplete
+C:\Users\cy\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.dll
+C:\Users\cy\Desktop\GitHub\pboc\POBC.RPG\obj\Debug\POBC.RPG.pdb
