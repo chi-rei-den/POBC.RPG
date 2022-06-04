@@ -186,7 +186,7 @@ namespace Bank
 				}
 				else
 				{
-					if (POBC2.Db.QueryCurrency(args.Player.Name) > Clist[0])
+					if (POBC2.Db.QueryCurrency(args.Player.Name) >= Clist[0])
 					{
 						TShock.UserAccounts.SetUserGroup(args.Player.Account, GroupList[0]);
 						POBC2.Db.DownC(args.Player.Name, Clist[0],"提升等级消耗");
@@ -223,7 +223,7 @@ namespace Bank
 				}
 				string com = args.Parameters[0];
 				int coordinate = GroupList.IndexOf(com);
-				if (Clist[coordinate] < POBC2.Db.QueryCurrency(args.Player.Name))
+				if (Clist[coordinate] <= POBC2.Db.QueryCurrency(args.Player.Name))
 				{
 					TShock.UserAccounts.SetUserGroup(args.Player.Account, args.Parameters[0]);
 					args.Player.SendWarningMessage("您的等级成功提升，当前等级" + args.Player.Group.Name);
