@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using POBC2;
 using Terraria;
 using Terraria.Localization;
 using TerrariaApi.Server;
@@ -37,50 +38,8 @@ namespace Bank
 		{
 			File();
 			ServerApi.Hooks.GameInitialize.Register(this, OnInitialize);
-			PlayerHooks.PlayerPostLogin += Login;
-			PlayerHooks.PlayerLogout += UserOut;
+            ServerApi.Hooks.GamePostUpdate.Register(this, OnPostUpdate);
 
-		}
-		public List<int> Idlist = new List<int>();
-		private void Login(PlayerPostLoginEventArgs e)
-		{
-			Idlist.Add(e.Player.Index);
-			if (!RPGconfig.Display)
-			{
-				return;
-			}
-			if (Idlist.Count>0)
-			{
-			t_task();
-			}
-			
-
-		}
-
-		private void UserOut(PlayerLogoutEventArgs e)
-		{
-			Idlist.Remove(e.Player.Index);
-
-		}
-
-		public  async Task t_task()
-		{
-			for (int i = 0; Idlist.Count>0; i++ )
-			{
-
-				for (int i2 = 0; i2 < Idlist.Count; i2++)
-				{
-					if (Idlist.Count < 1)
-					{
-						return;
-					}
-					msg(Idlist[i2]);
-
-				}
-				await Task.Delay(2000);
-			}
-	
-		
 		}
 		#endregion
 
@@ -90,8 +49,7 @@ namespace Bank
 			if (disposing)
 			{
 				ServerApi.Hooks.GameInitialize.Deregister(this, OnInitialize);
-				PlayerHooks.PlayerPostLogin -= Login;
-				PlayerHooks.PlayerLogout -= UserOut;
+                ServerApi.Hooks.GameInitialize.Deregister(this, OnPostUpdate);
 
 			}
 			base.Dispose(disposing);
@@ -114,44 +72,39 @@ namespace Bank
 
 		}
 
-		private string Data(int id)
-		{
-			List<string> GroupList = new List<string>(Gdata(TShock.Players[id].Group.Name).ToArray());
-			List<int> Clist = new List<int>(Cdata(TShock.Players[id].Group.Name).ToArray());
-			string data;
-			if (GroupList.Count ==0)
-			{
-				data = "MAX";
-				return data;
-			}
-			if (GroupList.Count >1)
-			{
-				data = "Null?";
-				return data;
-			}
-			else
-			{
-				data = Clist[0].ToString();
-				return data;
-
-			}
-			
-		}
-
-		public void msg(int id)
-		{
-			Random rd = new Random();
-			int r = rd.Next(0, 255);
-			int g = rd.Next(0, 255);
-			int b = rd.Next(0, 255);
-			string message = "[" + TShock.Players[id].Group.Name + "]" + "["+POBC2.Db.QueryCurrency(TShock.Players[id].Name) + "/" +Data(id)+ "]";
-			Microsoft.Xna.Framework.Color c = new Microsoft.Xna.Framework.Color(r, g, b);
-			NetMessage.SendData(119,
-	-1, -1, NetworkText.FromLiteral(message), (int)c.PackedValue, TShock.Players[id].X, TShock.Players[id].Y + 50);
+        private int frameCounter;
+        private readonly Random random = new Random();
 
 
+        public void OnPostUpdate(EventArgs _)
+        {
+            if (!RPGconfig.Display) return;
+            ++frameCounter;
+            if (frameCounter == RPGconfig.DisplayInterval) frameCounter = 0;
+            if (frameCounter >= TShock.Players.Length) return;
+            var player = TShock.Players[frameCounter];
+            if (player?.Account == null) return;
 
-		}
+            var text = "[" + player.Group.Name + "][" + Db.QueryCurrency(player.Name) + "/" + Data(player) + "]";
+            NetMessage.SendData(number: (int)random.Next(1 << 24), msgType: 119, remoteClient: -1,
+                ignoreClient: -1, text: NetworkText.FromLiteral(text), number2: player.X,
+                number3: player.Y + 50f);
+        }
+
+        private string Data(TSPlayer player)
+        {
+            List<string> list = new List<string>(Gdata(player.Group.Name).ToArray());
+            List<int> list2 = new List<int>(Cdata(player.Group.Name).ToArray());
+            if (list.Count == 0)
+            {
+                return "MAX";
+            }
+            if (list.Count > 1)
+            {
+                return "Null?";
+            }
+            return list2[0].ToString();
+        }
 
 		private void rank(CommandArgs args)
 		{

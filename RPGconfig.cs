@@ -6,6 +6,7 @@ namespace POBC.RPG
 	public class RPGConfig
 	{
 		public bool Display = true;
+        public int DisplayInterval = 180; // should larger than max player count
 
 		public RPGC[] RPGList = new RPGC[0];
 
