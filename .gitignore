@@ -1,0 +1,5 @@
+POBC2.dll
+obj/*
+packages/*
+.vs/*
+bin/*
