@@ -1,0 +1,14 @@
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\bin\Debug\net6.0\HttpServer.dll
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\bin\Debug\net6.0\POBC.RPG.dll.config
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\bin\Debug\net6.0\POBC.RPG.deps.json
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\bin\Debug\net6.0\POBC.RPG.dll
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\bin\Debug\net6.0\POBC.RPG.pdb
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\bin\Debug\net6.0\POBC2.dll
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\obj\Debug\net6.0\POBC.RPG.csproj.AssemblyReference.cache
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\obj\Debug\net6.0\POBC.RPG.GeneratedMSBuildEditorConfig.editorconfig
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\obj\Debug\net6.0\POBC.RPG.csproj.CoreCompileInputs.cache
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\obj\Debug\net6.0\POBC.RPG.csproj.CopyComplete
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\obj\Debug\net6.0\POBC.RPG.dll
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\obj\Debug\net6.0\refint\POBC.RPG.dll
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\obj\Debug\net6.0\POBC.RPG.pdb
+F:\仓库\GitHub\pobccore\POBC.RPG\POBC.RPG\obj\Debug\net6.0\ref\POBC.RPG.dll
